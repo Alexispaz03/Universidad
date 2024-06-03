@@ -1,0 +1,21 @@
+-- Crear la tabla Alumno_1
+CREATE TABLE `Alumno_1` (
+    `codigo` int(5) NOT NULL,
+    `cedula` varchar(15) DEFAULT NULL,
+    `nombres` varchar(40) DEFAULT NULL,
+    `apellidos` varchar(40) DEFAULT NULL,
+    `direccion` varchar(40) DEFAULT NULL,
+    `telefono1` varchar(15) DEFAULT NULL,
+    `telefono2` varchar(15) DEFAULT NULL,
+    `ciudad` varchar(50) DEFAULT NULL,
+    `provincia` varchar(50) DEFAULT NULL,
+    `pais` varchar(50) DEFAULT NULL,
+    `email` varchar(50) DEFAULT NULL,
+    `fechanacimiento` date DEFAULT NULL,
+    `redsocial` varchar(15) DEFAULT NULL,
+    `carrera` varchar(40) DEFAULT NULL,
+    `extension` varchar(15) DEFAULT NULL,
+    `aniograduacion` int(4) DEFAULT NULL,
+    PRIMARY KEY (`codigo`),
+    KEY `index_cedula` (`cedula`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
