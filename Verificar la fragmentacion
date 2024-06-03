@@ -1,0 +1,5 @@
+-- Mostrar datos de Alumno_1
+SELECT * FROM `Alumno_1`;
+
+-- Mostrar datos de Alumno_2
+SELECT * FROM `Alumno_2`;
