@@ -1,0 +1,40 @@
+-- Crear una vista unificada
+CREATE VIEW `alumno_unificado` AS
+SELECT 
+    `Alumno_1`.`codigo`, `Alumno_1`.`cedula`, `Alumno_1`.`nombres`, `Alumno_1`.`apellidos`,
+    `Alumno_1`.`direccion`, `Alumno_1`.`telefono1`, `Alumno_1`.`telefono2`, `Alumno_1`.`ciudad`,
+    `Alumno_1`.`provincia`, `Alumno_1`.`pais`, `Alumno_1`.`email`, `Alumno_1`.`fechanacimiento`,
+    `Alumno_1`.`redsocial`, `Alumno_1`.`carrera`, `Alumno_1`.`extension`, `Alumno_1`.`aniograduacion`,
+    NULL AS `lugardetrabajo`, NULL AS `direcciontrabajo`, NULL AS `telefono`, NULL AS `cargo`,
+    NULL AS `Empresapropia`, NULL AS `trabajaensuareadeestudio`, NULL AS `tiempodetrabajo`,
+    NULL AS `s1`, NULL AS `s2`, NULL AS `s3`, NULL AS `s4`, NULL AS `s5`, NULL AS `s6`, NULL AS `s7`,
+    NULL AS `s8`, NULL AS `s9`, NULL AS `s10`, NULL AS `s11`, NULL AS `s12`, NULL AS `s13`, NULL AS `s14`,
+    NULL AS `s15`, NULL AS `s16`, NULL AS `s17`, NULL AS `s18`, NULL AS `s19`, NULL AS `s20`, NULL AS `s21`,
+    NULL AS `s22`, NULL AS `s23`, NULL AS `s24`, NULL AS `s25`, NULL AS `s26`, NULL AS `s27`, NULL AS `s28`,
+    NULL AS `s29`, NULL AS `s30`, NULL AS `s31`, NULL AS `s32`, NULL AS `s33`, NULL AS `fechagrado`,
+    NULL AS `s36`, NULL AS `s37`, NULL AS `s38`, NULL AS `s39`, NULL AS `s40`, NULL AS `s41`, NULL AS `s42`,
+    NULL AS `s43`, NULL AS `s44`, NULL AS `s45`, NULL AS `s46`, NULL AS `s47`, NULL AS `area1`, NULL AS `area2`,
+    NULL AS `s48`, NULL AS `s45_1`, NULL AS `s46_1`, NULL AS `s47_1`, NULL AS `s48_1`, NULL AS `s49_1`,
+    NULL AS `s50_1`, NULL AS `valida`, NULL AS `validac`, NULL AS `validad`, NULL AS `validas`, NULL AS `validat`,
+    NULL AS `ins_even`, NULL AS `par_even`
+FROM `Alumno_1`
+UNION ALL
+SELECT 
+    `Alumno_2`.`codigo`, `Alumno_2`.`cedula`, `Alumno_2`.`nombres`, `Alumno_2`.`apellidos`,
+    `Alumno_2`.`direccion`, `Alumno_2`.`telefono1`, `Alumno_2`.`telefono2`, `Alumno_2`.`ciudad`,
+    `Alumno_2`.`provincia`, `Alumno_2`.`pais`, `Alumno_2`.`email`, `Alumno_2`.`fechanacimiento`,
+    `Alumno_2`.`redsocial`, `Alumno_2`.`carrera`, `Alumno_2`.`extension`, `Alumno_2`.`aniograduacion`,
+    `Alumno_2`.`lugardetrabajo`, `Alumno_2`.`direcciontrabajo`, `Alumno_2`.`telefono`, `Alumno_2`.`cargo`,
+    `Alumno_2`.`Empresapropia`, `Alumno_2`.`trabajaensuareadeestudio`, `Alumno_2`.`tiempodetrabajo`,
+    `Alumno_2`.`s1`, `Alumno_2`.`s2`, `Alumno_2`.`s3`, `Alumno_2`.`s4`, `Alumno_2`.`s5`, `Alumno_2`.`s6`,
+    `Alumno_2`.`s7`, `Alumno_2`.`s8`, `Alumno_2`.`s9`, `Alumno_2`.`s10`, `Alumno_2`.`s11`, `Alumno_2`.`s12`,
+    `Alumno_2`.`s13`, `Alumno_2`.`s14`, `Alumno_2`.`s15`, `Alumno_2`.`s16`, `Alumno_2`.`s17`, `Alumno_2`.`s18`,
+    `Alumno_2`.`s19`, `Alumno_2`.`s20`, `Alumno_2`.`s21`, `Alumno_2`.`s22`, `Alumno_2`.`s23`, `Alumno_2`.`s24`,
+    `Alumno_2`.`s25`, `Alumno_2`.`s26`, `Alumno_2`.`s27`, `Alumno_2`.`s28`, `Alumno_2`.`s29`, `Alumno_2`.`s30`,
+    `Alumno_2`.`s31`, `Alumno_2`.`s32`, `Alumno_2`.`s33`, `Alumno_2`.`fechagrado`, `Alumno_2`.`s36`,
+    `Alumno_2`.`s37`, `Alumno_2`.`s38`, `Alumno_2`.`s39`, `Alumno_2`.`s40`, `Alumno_2`.`s41`, `Alumno_2`.`s42`,
+    `Alumno_2`.`s43`, `Alumno_2`.`s44`, `Alumno_2`.`s45`, `Alumno_2`.`s46`, `Alumno_2`.`s47`, `Alumno_2`.`area1`,
+    `Alumno_2`.`area2`, `Alumno_2`.`s48`, `Alumno_2`.`s45_1`, `Alumno_2`.`s46_1`, `Alumno_2`.`s47_1`,
+    `Alumno_2`.`s48_1`, `Alumno_2`.`s49_1`, `Alumno_2`.`s50_1`, `Alumno_2`.`valida`, `Alumno_2`.`validac`,
+    `Alumno_2`.`validad`, `Alumno_2`.`validas`, `Alumno_2`.`validat`, `Alumno_2`.`ins_even`, `Alumno_2`.`par_even`
+FROM `Alumno_2`;
